@@ -1,5 +1,5 @@
-import boto3
-from pprint import pprint
+import boto3 
+from pprint import pprint  #to describe the instance in a proper json format
 aws_mng_con = boto3.session.Session()
 aws_ec2_inst = aws_mng_con.resource(service_name = 'ec2', region_name = 'us-east-1')
 cnt = 1
